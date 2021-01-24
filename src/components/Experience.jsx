@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: theme.palette.type === "dark" ? "dark" : "#90caf9"
 	},
 	tab: {
-		color: theme.palette.type === "dark" ? "white" : "rgba(0, 0, 0, 0.87)"
+		color: theme.palette.type === "dark" ? "white" : "rgba(0, 0, 0, 0.87)",
+		fontWeight: 700
 	}
 }))
 

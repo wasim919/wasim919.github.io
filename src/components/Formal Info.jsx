@@ -40,10 +40,21 @@ const useStyles = makeStyles((theme) => ({
 	},
 	accordionTitle: {
 		display: "flex",
-		gap: "1rem"
+		gap: "1rem",
+		fontWeight: theme.palette.type === "dark" ? 400 : 700
 	},
 	accordionDetailsStyle: {
 		backgroundColor: theme.palette.type === "dark" ? "dark" : "#f0f0f0"
+	},
+	verticalLineStyle: {
+		height: "90%",
+		width: "5px",
+		backgroundColor: "#00c853",
+		marginLeft: "3rem",
+		marginTop: "1rem"
+	},
+	boldFont: {
+		fontWeight: theme.palette.type === "dark" ? 400 : 700
 	}
 }))
 
@@ -83,14 +94,14 @@ export default function FormalInfo() {
 								<Table>
 									<TableBody>
 										<TableRow>
-											<TableCell>{formalInfo[0][0].title}</TableCell>
-											<TableCell>{formalInfo[0][0].college}</TableCell>
-											<TableCell>{formalInfo[0][0].year}</TableCell>
+											<TableCell className={classes.boldFont}>{formalInfo[0][0].title}</TableCell>
+											<TableCell className={classes.boldFont}>{formalInfo[0][0].college}</TableCell>
+											<TableCell className={classes.boldFont}>{formalInfo[0][0].year}</TableCell>
 										</TableRow>
 										<TableRow>
-											<TableCell>{formalInfo[0][1].title}</TableCell>
-											<TableCell>{formalInfo[0][1].college}</TableCell>
-											<TableCell>{formalInfo[0][1].year}</TableCell>
+											<TableCell className={classes.boldFont}>{formalInfo[0][1].title}</TableCell>
+											<TableCell className={classes.boldFont}>{formalInfo[0][1].college}</TableCell>
+											<TableCell className={classes.boldFont}>{formalInfo[0][1].year}</TableCell>
 										</TableRow>
 									</TableBody>
 								</Table>
@@ -106,25 +117,38 @@ export default function FormalInfo() {
 						</AccordionSummary>
 						<AccordionDetails className={classes.accordionDetailsStyle}>
 							<Grid container spacing={5}>
+								<Grid item sm={1}>
+									<div className={classes.verticalLineStyle}></div>
+								</Grid>
 								<Grid item sm={4}>
-									<span></span>
 									<List>
 										{(formalInfo[1][0] || []).map((ele, index) => (
 											<>
 												<ListItem key={index}>
-													<ListItemText>{ele}</ListItemText>
+													<ListItemText>
+														<Typography className={classes.boldFont} variant="body1">
+															{ele}
+														</Typography>
+													</ListItemText>
 												</ListItem>
 												<Divider />
 											</>
 										))}
 									</List>
 								</Grid>
+								<Grid item sm={1}>
+									<div className={classes.verticalLineStyle} style={{ backgroundColor: "#0091ea" }}></div>
+								</Grid>
 								<Grid item sm={4}>
 									<List>
 										{(formalInfo[1][1] || []).map((ele, index) => (
 											<>
 												<ListItem key={index}>
-													<ListItemText>{ele}</ListItemText>
+													<ListItemText>
+														<Typography className={classes.boldFont} variant="body1">
+															{ele}
+														</Typography>
+													</ListItemText>
 												</ListItem>
 												<Divider />
 											</>
@@ -143,25 +167,38 @@ export default function FormalInfo() {
 						</AccordionSummary>
 						<AccordionDetails className={classes.accordionDetailsStyle}>
 							<Grid container spacing={5}>
+								<Grid item sm={1}>
+									<div className={classes.verticalLineStyle} style={{ backgroundColor: "#c62828" }}></div>
+								</Grid>
 								<Grid item sm={4}>
-									<span></span>
 									<List>
 										{(formalInfo[2][0] || []).map((ele, index) => (
 											<>
 												<ListItem key={index}>
-													<ListItemText>{ele}</ListItemText>
+													<ListItemText>
+														<Typography className={classes.boldFont} variant="body1">
+															{ele}
+														</Typography>
+													</ListItemText>
 												</ListItem>
 												<Divider />
 											</>
 										))}
 									</List>
 								</Grid>
+								<Grid item sm={1}>
+									<div className={classes.verticalLineStyle} style={{ backgroundColor: "#6a1b9a" }}></div>
+								</Grid>
 								<Grid item sm={4}>
 									<List>
 										{(formalInfo[2][1] || []).map((ele, index) => (
 											<>
 												<ListItem key={index}>
-													<ListItemText>{ele}</ListItemText>
+													<ListItemText>
+														<Typography className={classes.boldFont} variant="body1">
+															{ele}
+														</Typography>
+													</ListItemText>
 												</ListItem>
 												<Divider />
 											</>
