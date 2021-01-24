@@ -8,20 +8,22 @@ import { bio } from "../content"
 export default function MyBio() {
 	const classes = useStyles()
 	return (
-		<Grid className={classes.gridStyle} style={{ height: "100vh" }} spacing={2} container>
-			<Grid item sm={12} md={6}>
-				<Typography className={classes.myName} variant="h5">
-					Wasim Ishaq Khan
-				</Typography>
-				<Typography className={classes.myName}>Developer | Data Analyst | Photographer</Typography>
-				{(bio || []).map((ele, index) => (
-					<Typography key={index} variant="h6" className={classes.bioStyle}>
-						{ele}
+		<Grid className={classes.gridStyle} container>
+			<Grid container spacing={5} className={classes.innerGridStyle}>
+				<Grid item sm={12} md={6}>
+					<Typography className={classes.myName} variant="h5">
+						Wasim Ishaq Khan
 					</Typography>
-				))}
-			</Grid>
-			<Grid item sm={12} md={6}>
-				<Avatar className={classes.myPhotoStyle} alt="My Photo" src="/images/Wasim.jpeg"></Avatar>
+					<Typography className={classes.myName}>Developer | Data Analyst | Photographer</Typography>
+					{(bio || []).map((ele, index) => (
+						<Typography key={index} variant="h6" className={classes.bioStyle}>
+							{ele}
+						</Typography>
+					))}
+				</Grid>
+				<Grid item sm={12} md={6}>
+					<Avatar className={classes.myPhotoStyle} alt="My Photo" src="/images/Wasim.jpeg"></Avatar>
+				</Grid>
 			</Grid>
 		</Grid>
 	)

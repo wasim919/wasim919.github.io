@@ -27,7 +27,7 @@ export default function App() {
 
 	return (
 		<ThemeProvider theme={customTheme}>
-			<Paper elevation={0} square={true}>
+			<Paper style={{ display: "flex", flexDirection: "column" }} elevation={0} square={true}>
 				<Header dark={dark} changeTheme={changeTheme} />
 				<Container>
 					<MyBio />
