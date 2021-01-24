@@ -59,18 +59,13 @@ export const projects = [
 	}
 ]
 
-export const experienceTypes = ["Software Developer", "AI"]
+export const experienceTypes = ["Software Developer", "AI", "Freelance"]
 
 export const softExperience = [
 	{
 		title: "Full Stack Developer",
 		subHeading: "August 2020, Sprung Inc",
 		description: ["Lead Front-end developer at Sprung Inc (Silicon valley based company)."]
-	},
-	{
-		title: "Freelancing",
-		subHeading: "Nov 2018 - Jan 2019",
-		description: ["Developed fully-responsive website, AI/ML products for a no. of clients."]
 	}
 ]
 
@@ -81,5 +76,13 @@ export const aiExperience = [
 		description: [
 			"Conducted classes, workshops and demonstrations to teach AI algorithms and techniques to 200+ undergraduate students."
 		]
+	}
+]
+
+export const freeLanceExperience = [
+	{
+		title: "Freelancing",
+		subHeading: "Nov 2018 - Jan 2019",
+		description: ["Developed fully-responsive websites, AI/ML products for a no. of clients."]
 	}
 ]

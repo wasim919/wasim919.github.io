@@ -1,8 +1,8 @@
 import React from "react"
 
-import { Grid, AppBar, Tabs, Tab, makeStyles, Box, Typography, List } from "@material-ui/core"
+import { Grid, AppBar, Tabs, Tab, makeStyles, Typography, List } from "@material-ui/core"
 
-import { experienceTypes, aiExperience, softExperience } from "../content"
+import { experienceTypes, aiExperience, softExperience, freeLanceExperience } from "../content"
 import ExperienceListComponent from "./ExperienceListComponent"
 
 const useStyles = makeStyles((theme) => ({
@@ -63,6 +63,11 @@ export default function Experience() {
 				<TabPanel value={value} index={1}>
 					<List>
 						<ExperienceListComponent experience={aiExperience} />
+					</List>
+				</TabPanel>
+				<TabPanel value={value} index={2}>
+					<List>
+						<ExperienceListComponent experience={freeLanceExperience} />
 					</List>
 				</TabPanel>
 			</Grid>
