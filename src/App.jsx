@@ -7,6 +7,8 @@ import Header from "./components/Header"
 import MyBio from "./components/MyBio"
 import Projects from "./components/Projects"
 import Experience from "./components/Experience"
+import FomalInfo from "./components/Formal Info"
+import FormalInfo from "./components/Formal Info"
 
 export default function App() {
 	const [dark, setDark] = useState(localStorage.getItem("mysitetheme") ? JSON.parse(localStorage.getItem("mysitetheme")) : false)
@@ -35,6 +37,7 @@ export default function App() {
 					<MyBio />
 					<Projects />
 					<Experience />
+					<FormalInfo />
 				</Container>
 			</Paper>
 		</ThemeProvider>

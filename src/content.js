@@ -86,3 +86,47 @@ export const freeLanceExperience = [
 		description: ["Developed fully-responsive websites, AI/ML products for a no. of clients."]
 	}
 ]
+
+export const formalInfoTypes = ["Education", "Skills", "Coursework"]
+
+export const formalInfo = [
+	[
+		{
+			title: "B. Tech (CSE)",
+			college: "Indian Institute of Information Technology, Sricity",
+			year: "2016 - 2020"
+		},
+		{
+			title: "Class IX-XII (JKBOSE)",
+			college: "Sir Syed Memorial Higher Secondary, Parray Pora",
+			year: "2013 - 2016"
+		}
+	],
+	[
+		["JavaScript, C++, Python, Java", "Node, Express, React, Django", "Material-UI, Materialize, CSS, HTML, Bootstrap", "Firebase"],
+		[
+			"Data Analysis",
+			"Artificial Intelligence, Machine Learning, Deep Learning",
+			"Numpy, Pandas, Keras",
+			"Tensorflow, Matplotlib, Seaborn"
+		]
+	],
+	[
+		[
+			"Data Structures and Algorithms",
+			"Applied Software Engineering",
+			"Database Management Systems",
+			"Infomation Retrieval",
+			"Computer Networking",
+			"Machine Learning"
+		],
+		[
+			"Object Oriented Programming",
+			"Theory of Computation",
+			"Operating Systems",
+			"Computer Organization and Architecture",
+			"Applied Statistical Data Analysis",
+			"Deep Learning"
+		]
+	]
+]
