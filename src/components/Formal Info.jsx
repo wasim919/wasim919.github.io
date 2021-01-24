@@ -15,12 +15,14 @@ import {
 	TableCell,
 	Divider,
 	ListItem,
-	ListItemText
+	ListItemText,
+	Button
 } from "@material-ui/core"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import SchoolIcon from "@material-ui/icons/School"
 import CodeIcon from "@material-ui/icons/Code"
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks"
+import SaveIcon from "@material-ui/icons/Save"
 
 import { formalInfo } from "../content"
 
@@ -210,7 +212,11 @@ export default function FormalInfo() {
 					</Accordion>
 				</Grid>
 			</Grid>
-			<Grid container></Grid>
+			<div style={{ margin: "2rem auto" }}>
+				<Button download="wasim_resume.pdf" href="/wasim_resume.pdf" variant="contained" color="primary" startIcon={<SaveIcon />}>
+					Resume
+				</Button>
+			</div>
 		</Grid>
 	)
 }
