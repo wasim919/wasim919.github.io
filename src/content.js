@@ -50,11 +50,36 @@ export const projects = [
 		link: "https://github.com/wasim919/global-covid19-tracker"
 	},
 	{
-		title: "Machine Learning Algorithm Implementations",
+		title: "Machine Learning Algorithms Implementation",
 		subHeading: "ANSI C",
 		description: [
 			"This project involved the implementation of general machine learning algorithms like Arti cial Neural Networks, KNN Classi er and Naive Bayes Classi er using ANSI-C."
 		],
 		link: "https://github.com/wasim919"
+	}
+]
+
+export const experienceTypes = ["Software Developer", "AI"]
+
+export const softExperience = [
+	{
+		title: "Full Stack Developer",
+		subHeading: "August 2020, Sprung Inc",
+		description: ["Lead Front-end developer at Sprung Inc (Silicon valley based company)."]
+	},
+	{
+		title: "Freelancing",
+		subHeading: "Nov 2018 - Jan 2019",
+		description: ["Developed fully-responsive website, AI/ML products for a no. of clients."]
+	}
+]
+
+export const aiExperience = [
+	{
+		title: "Teaching Assistant",
+		subHeading: "Aug 2019 - Dec 2019, IIITS",
+		description: [
+			"Conducted classes, workshops and demonstrations to teach AI algorithms and techniques to 200+ undergraduate students."
+		]
 	}
 ]
