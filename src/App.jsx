@@ -5,6 +5,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core"
 
 import Header from "./components/Header"
 import MyBio from "./components/MyBio"
+import Projects from "./components/Projects"
 
 export default function App() {
 	const [dark, setDark] = useState(localStorage.getItem("mysitetheme") ? JSON.parse(localStorage.getItem("mysitetheme")) : false)
@@ -31,6 +32,7 @@ export default function App() {
 				<Header dark={dark} changeTheme={changeTheme} />
 				<Container>
 					<MyBio />
+					<Projects />
 				</Container>
 			</Paper>
 		</ThemeProvider>
