@@ -20,7 +20,10 @@ export default function App() {
 				fontFamily: "Oswald, sans-serif"
 			},
 			palette: {
-				type: dark ? "dark" : "light"
+				type: dark ? "dark" : "light",
+				background: {
+					paper: dark ? "#424242" : "#f0f0f0"
+				}
 			}
 		})
 	}, [dark])
@@ -36,10 +39,10 @@ export default function App() {
 				<Header dark={dark} changeTheme={changeTheme} />
 				<Container>
 					<MyBio />
-					<Projects />
-					<Experience />
-					<FormalInfo />
-					<Connect />
+					<Projects dark={dark} />
+					<Experience dark={dark} />
+					<FormalInfo dark={dark} />
+					<Connect dark={dark} />
 				</Container>
 				<Footer />
 			</Paper>

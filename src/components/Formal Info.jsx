@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
 	tab: {
 		color: theme.palette.type === "dark" ? "white" : "rgba(0, 0, 0, 0.87)"
 	},
+	accordionSummary: {
+		backgroundColor: theme.palette.type === "light" ? "white" : "dark"
+	},
 	accordionTitle: {
 		display: "flex",
 		gap: "1rem",
@@ -65,16 +68,6 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-function TabPanel(props) {
-	const { children, value, index, ...other } = props
-
-	return (
-		<div role="tabpanel" id={`simple-tabpanel-${index}`} aria-labelledby={`simple-tab-${index}`} {...other}>
-			{value === index && <Typography>{children}</Typography>}
-		</div>
-	)
-}
-
 export default function FormalInfo() {
 	const [expanded, setExpanded] = React.useState("panel2")
 
@@ -90,7 +83,12 @@ export default function FormalInfo() {
 			<Grid container>
 				<Grid item sm={12}>
 					<Accordion expanded={expanded === "panel1"} onChange={handleChange("panel1")}>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
+						<AccordionSummary
+							className={classes.accordionSummary}
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel1bh-content"
+							id="panel1bh-header"
+						>
 							<Typography className={classes.accordionTitle} variant="body1">
 								<SchoolIcon />
 								Education
@@ -116,7 +114,12 @@ export default function FormalInfo() {
 						</AccordionDetails>
 					</Accordion>
 					<Accordion expanded={expanded === "panel2"} onChange={handleChange("panel2")}>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2-content" id="panel2bh-header">
+						<AccordionSummary
+							className={classes.accordionSummary}
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2-content"
+							id="panel2bh-header"
+						>
 							<Typography className={classes.accordionTitle} variant="body2">
 								<CodeIcon />
 								Skills
@@ -166,7 +169,12 @@ export default function FormalInfo() {
 						</AccordionDetails>
 					</Accordion>
 					<Accordion expanded={expanded === "panel3"} onChange={handleChange("panel3")}>
-						<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2-content" id="panel2bh-header">
+						<AccordionSummary
+							className={classes.accordionSummary}
+							expandIcon={<ExpandMoreIcon />}
+							aria-controls="panel2-content"
+							id="panel2bh-header"
+						>
 							<Typography className={classes.accordionTitle} variant="body2">
 								<LibraryBooksIcon />
 								Coursework

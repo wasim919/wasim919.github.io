@@ -19,6 +19,12 @@ const useStyles = makeStyles((theme) => ({
 	tab: {
 		color: theme.palette.type === "dark" ? "white" : "rgba(0, 0, 0, 0.87)",
 		fontWeight: 700
+	},
+	tabPanel: {
+		[theme.breakpoints.up("md")]: {
+			width: "38.5rem"
+		},
+		backgroundColor: theme.palette.type === "light" ? "white" : "dark"
 	}
 }))
 
@@ -55,7 +61,7 @@ export default function Experience() {
 					</AppBar>
 				</Grid>
 			</Grid>
-			<Grid container>
+			<Grid className={classes.tabPanel} container>
 				<TabPanel value={value} index={0}>
 					<List>
 						<ExperienceListComponent experience={softExperience} />

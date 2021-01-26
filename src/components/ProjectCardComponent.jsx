@@ -6,6 +6,9 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 const useStyles = makeStyles((theme) => ({
 	header: {
 		backgroundColor: theme.palette.type === "dark" ? "light" : "#cfd8dc"
+	},
+	content: {
+		backgroundColor: theme.palette.type === "dark" ? "dark" : "white"
 	}
 }))
 
@@ -14,11 +17,11 @@ export default function ProjectCardComponent({ title, subHeading, description, l
 	return (
 		<Card>
 			<CardHeader className={classes.header} title={title} subheader={subHeading} />
-			<CardContent>
+			<CardContent className={classes.content}>
 				<Typography variant="body1">{(description || []).join("\n")}</Typography>
 			</CardContent>
 			<Divider />
-			<CardActions>
+			<CardActions className={classes.content}>
 				<IconButton aria-label="Github link" target="_blank" href={link}>
 					<GitHubIcon />
 				</IconButton>
