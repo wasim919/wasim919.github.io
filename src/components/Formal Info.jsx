@@ -49,10 +49,15 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: theme.palette.type === "dark" ? "dark" : "#f0f0f0"
 	},
 	verticalLineStyle: {
+		[theme.breakpoints.up("md")]: {
+			marginLeft: "3rem"
+		},
+		[theme.breakpoints.down("md")]: {
+			marginLeft: "1rem"
+		},
 		height: "90%",
 		width: "5px",
 		backgroundColor: "#00c853",
-		marginLeft: "3rem",
 		marginTop: "1rem"
 	},
 	boldFont: {
@@ -119,10 +124,10 @@ export default function FormalInfo() {
 						</AccordionSummary>
 						<AccordionDetails className={classes.accordionDetailsStyle}>
 							<Grid container spacing={5}>
-								<Grid item sm={1}>
+								<Grid item xs={1}>
 									<div className={classes.verticalLineStyle}></div>
 								</Grid>
-								<Grid item sm={4}>
+								<Grid item xs={10} md={5}>
 									<List>
 										{(formalInfo[1][0] || []).map((ele, index) => (
 											<>
@@ -138,10 +143,10 @@ export default function FormalInfo() {
 										))}
 									</List>
 								</Grid>
-								<Grid item sm={1}>
+								<Grid item xs={1}>
 									<div className={classes.verticalLineStyle} style={{ backgroundColor: "#0091ea" }}></div>
 								</Grid>
-								<Grid item sm={4}>
+								<Grid item xs={10} md={5}>
 									<List>
 										{(formalInfo[1][1] || []).map((ele, index) => (
 											<>
@@ -169,10 +174,10 @@ export default function FormalInfo() {
 						</AccordionSummary>
 						<AccordionDetails className={classes.accordionDetailsStyle}>
 							<Grid container spacing={5}>
-								<Grid item sm={1}>
+								<Grid item xs={1}>
 									<div className={classes.verticalLineStyle} style={{ backgroundColor: "#c62828" }}></div>
 								</Grid>
-								<Grid item sm={4}>
+								<Grid item xs={10} md={5}>
 									<List>
 										{(formalInfo[2][0] || []).map((ele, index) => (
 											<>
@@ -188,10 +193,10 @@ export default function FormalInfo() {
 										))}
 									</List>
 								</Grid>
-								<Grid item sm={1}>
+								<Grid item xs={1}>
 									<div className={classes.verticalLineStyle} style={{ backgroundColor: "#6a1b9a" }}></div>
 								</Grid>
-								<Grid item sm={4}>
+								<Grid item xs={10} md={5}>
 									<List>
 										{(formalInfo[2][1] || []).map((ele, index) => (
 											<>
