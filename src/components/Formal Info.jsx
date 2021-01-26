@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 			marginLeft: "3rem"
 		},
 		[theme.breakpoints.down("md")]: {
-			marginLeft: "1rem"
+			marginLeft: "0.5rem"
 		},
 		height: "90%",
 		width: "5px",
