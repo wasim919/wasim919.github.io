@@ -8,7 +8,9 @@ import { projects } from "../content"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
-		marginTop: "3rem"
+		[theme.breakpoints.up("md")]: {
+			marginTop: "3rem"
+		}
 	},
 	titleStyle: {
 		fontFamily: "Monoton",

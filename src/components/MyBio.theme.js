@@ -2,7 +2,9 @@ import { makeStyles } from "@material-ui/core"
 
 export const useStyles = makeStyles((theme) => ({
 	gridStyle: {
-		height: "100vh"
+		[theme.breakpoints.up("md")]: {
+			height: "100vh"
+		}
 	},
 	innerGridStyle: {
 		marginTop: "2rem"
