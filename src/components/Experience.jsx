@@ -55,7 +55,7 @@ export default function Experience() {
 					<AppBar position="static">
 						<Tabs className={classes.tabs} value={value} onChange={handleChange} aria-label="Experience Tabs">
 							{(experienceTypes || []).map((ele, index) => (
-								<Tab className={classes.tab} label={ele} key={index} />
+								<Tab className={classes.tab} value={index} label={ele} key={index} />
 							))}
 						</Tabs>
 					</AppBar>

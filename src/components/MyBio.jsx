@@ -5,13 +5,13 @@ import { Grid, Typography, Avatar } from "@material-ui/core"
 import { useStyles } from "./MyBio.theme"
 import { bio } from "../content"
 
-export default function MyBio() {
+export default function MyBio({ id }) {
 	const classes = useStyles()
 	return (
 		<Grid className={classes.gridStyle} container>
 			<Grid container spacing={5} className={classes.innerGridStyle}>
 				<Grid item sm={12} md={6}>
-					<Typography className={classes.myName} variant="h5">
+					<Typography id={id} className={classes.myName} variant="h5">
 						Wasim Ishaq Khan
 					</Typography>
 					<Typography className={classes.myName}>Developer | Data Analyst | Photographer</Typography>

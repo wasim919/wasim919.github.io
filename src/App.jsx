@@ -77,11 +77,9 @@ export default function App() {
 	return (
 		<ThemeProvider theme={customTheme}>
 			<Paper style={{ display: "flex", flexDirection: "column" }} elevation={0} square={true}>
-				<div id="back-to-top-anchor">
-					<Header dark={dark} changeTheme={changeTheme} />
-				</div>
+				<Header dark={dark} changeTheme={changeTheme} />
 				<Container>
-					<MyBio />
+					<MyBio id="back-to-top-anchor" />
 					<Projects dark={dark} />
 					<Experience dark={dark} />
 					<FormalInfo dark={dark} />
