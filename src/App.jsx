@@ -1,7 +1,11 @@
 import React, { useState } from "react"
 
 import { Paper, Container } from "@material-ui/core"
-import { ThemeProvider, createMuiTheme, BottomNavigation, BottomNavigationAction } from "@material-ui/core"
+import { ThemeProvider, createMuiTheme, makeStyles } from "@material-ui/core"
+import useScrollTrigger from "@material-ui/core/useScrollTrigger"
+import Fab from "@material-ui/core/Fab"
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp"
+import Zoom from "@material-ui/core/Zoom"
 
 import Header from "./components/Header"
 import MyBio from "./components/MyBio"
@@ -33,16 +37,60 @@ export default function App() {
 		localStorage.setItem("mysitetheme", JSON.stringify(!dark))
 	}
 
+	const useStyles = makeStyles((theme) => ({
+		root: {
+			position: "fixed",
+			bottom: theme.spacing(2),
+			right: theme.spacing(2)
+		}
+	}))
+
+	function ScrollTop(props) {
+		const { children, window } = props
+		const classes = useStyles()
+		// Note that you normally won't need to set the window ref as useScrollTrigger
+		// will default to window.
+		// This is only being set here because the demo is in an iframe.
+		const trigger = useScrollTrigger({
+			target: window ? window() : undefined,
+			disableHysteresis: true,
+			threshold: 100
+		})
+
+		const handleClick = (event) => {
+			const anchor = (event.target.ownerDocument || document).querySelector("#back-to-top-anchor")
+
+			if (anchor) {
+				anchor.scrollIntoView({ behavior: "smooth", block: "center" })
+			}
+		}
+
+		return (
+			<Zoom in={trigger}>
+				<div onClick={handleClick} role="presentation" className={classes.root}>
+					{children}
+				</div>
+			</Zoom>
+		)
+	}
+
 	return (
 		<ThemeProvider theme={customTheme}>
 			<Paper style={{ display: "flex", flexDirection: "column" }} elevation={0} square={true}>
-				<Header dark={dark} changeTheme={changeTheme} />
+				<div id="back-to-top-anchor">
+					<Header dark={dark} changeTheme={changeTheme} />
+				</div>
 				<Container>
 					<MyBio />
 					<Projects dark={dark} />
 					<Experience dark={dark} />
 					<FormalInfo dark={dark} />
 					<Connect dark={dark} />
+					<ScrollTop>
+						<Fab color="secondary" size="small" aria-label="scroll back to top">
+							<KeyboardArrowUpIcon />
+						</Fab>
+					</ScrollTop>
 				</Container>
 				<Footer />
 			</Paper>
