@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-export default function Projects() {
+export default function Projects({ id }) {
 	const classes = useStyles()
 	return (
 		<Grid className={classes.mainContainer} container>
@@ -27,7 +27,7 @@ export default function Projects() {
 			</Typography>
 			<Grid container spacing={5}>
 				{(projects || []).map((ele, index) => (
-					<Grid item sm={12} md={6} key={index}>
+					<Grid id={id} item sm={12} md={6} key={index}>
 						<ProjectCardComponent {...ele} />
 					</Grid>
 				))}

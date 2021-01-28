@@ -80,10 +80,10 @@ export default function App() {
 				<Header dark={dark} changeTheme={changeTheme} />
 				<Container>
 					<MyBio id="back-to-top-anchor" />
-					<Projects dark={dark} />
-					<Experience dark={dark} />
-					<FormalInfo dark={dark} />
-					<Connect dark={dark} />
+					<Projects id="projects" dark={dark} />
+					<Experience id="experience" dark={dark} />
+					<FormalInfo id="formalInfo" dark={dark} />
+					<Connect id="connect" dark={dark} />
 					<ScrollTop>
 						<Fab color="secondary" size="small" aria-label="scroll back to top">
 							<KeyboardArrowUpIcon />

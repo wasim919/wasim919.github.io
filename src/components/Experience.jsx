@@ -38,7 +38,7 @@ function TabPanel(props) {
 	)
 }
 
-export default function Experience() {
+export default function Experience({ id }) {
 	const [value, setValue] = React.useState(0)
 
 	const handleChange = (event, newValue) => {
@@ -61,7 +61,7 @@ export default function Experience() {
 					</AppBar>
 				</Grid>
 			</Grid>
-			<Grid className={classes.tabPanel} container>
+			<Grid id={id} className={classes.tabPanel} container>
 				<TabPanel value={value} index={0}>
 					<List>
 						<ExperienceListComponent experience={softExperience} />

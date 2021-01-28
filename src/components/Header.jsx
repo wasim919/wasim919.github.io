@@ -98,6 +98,15 @@ export default function Header({ dark, changeTheme }) {
 		setOpen(true)
 	}
 
+	const handleScroll = (e, id) => {
+		const anchor = (e.target.ownerDocument || document).querySelector(`#${id}`)
+
+		if (anchor) {
+			anchor.scrollIntoView({ behavior: "smooth", block: "center" })
+			setOpen(false)
+		}
+	}
+
 	const handleDrawerClose = () => {
 		setOpen(false)
 	}
@@ -149,19 +158,19 @@ export default function Header({ dark, changeTheme }) {
 				</List>
 				<Divider /> */}
 				<List>
-					<ListItem button>
+					<ListItem button onClick={(e) => handleScroll(e, "projects")}>
 						<ListItemIcon>
 							<StorageIcon />
 						</ListItemIcon>
 						<ListItemText primary={"Projects"} />
 					</ListItem>
-					<ListItem button>
+					<ListItem button onClick={(e) => handleScroll(e, "experience")}>
 						<ListItemIcon>
 							<WorkOutlineIcon />
 						</ListItemIcon>
 						<ListItemText primary={"Experience"} />
 					</ListItem>
-					<ListItem button>
+					<ListItem button onClick={(e) => handleScroll(e, "formalInfo")}>
 						<ListItemIcon>
 							<InfoIcon />
 						</ListItemIcon>
@@ -170,7 +179,7 @@ export default function Header({ dark, changeTheme }) {
 				</List>
 				<Divider />
 				<List>
-					<ListItem button>
+					<ListItem button onClick={(e) => handleScroll(e, "connect")}>
 						<ListItemIcon>
 							<ContactsIcon />
 						</ListItemIcon>

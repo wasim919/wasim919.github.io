@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-export default function Connect() {
+export default function Connect({ id }) {
 	const classes = useStyles()
 	return (
 		<div style={{ marginTop: "2rem" }}>
 			<Typography className={classes.titleStyle} variant="h4">
 				Connect
 			</Typography>
-			<div style={{ display: "flex", justifyContent: "center" }}>
+			<div id={id} style={{ display: "flex", justifyContent: "center" }}>
 				<IconButton href="https://instagram.com/wasim_ikhan/" target="_blank">
 					<InstagramIcon className={classes.iconStyle} style={{ color: "e4405f" }} />
 				</IconButton>

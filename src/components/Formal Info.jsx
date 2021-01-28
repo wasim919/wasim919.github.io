@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-export default function FormalInfo() {
+export default function FormalInfo({ id }) {
 	const [expanded, setExpanded] = React.useState("panel2")
 
 	const handleChange = (panel) => (event, isExpanded) => {
@@ -120,7 +120,7 @@ export default function FormalInfo() {
 							aria-controls="panel2-content"
 							id="panel2bh-header"
 						>
-							<Typography className={classes.accordionTitle} variant="body2">
+							<Typography id={id} className={classes.accordionTitle} variant="body2">
 								<CodeIcon />
 								Skills
 							</Typography>
