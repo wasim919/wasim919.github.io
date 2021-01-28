@@ -22,7 +22,7 @@ export default function MyBio({ id }) {
 					))}
 				</Grid>
 				<Grid item sm={12} md={6}>
-					<Avatar className={classes.myPhotoStyle} alt="My Photo" src="images/Wasim.jpeg"></Avatar>
+					<Avatar className={classes.myPhotoStyle} alt="My Photo" src="../../images/Wasim.jpeg"></Avatar>
 				</Grid>
 			</Grid>
 		</Grid>
