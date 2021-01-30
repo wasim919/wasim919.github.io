@@ -25,13 +25,14 @@ import LibraryBooksIcon from "@material-ui/icons/LibraryBooks"
 import SaveIcon from "@material-ui/icons/Save"
 
 import { formalInfo } from "../content"
+import { titleFontFamily } from "../theme"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		marginTop: "5rem"
 	},
 	titleStyle: {
-		fontFamily: "Monoton",
+		fontFamily: titleFontFamily,
 		marginBottom: "2rem"
 	},
 	tabs: {

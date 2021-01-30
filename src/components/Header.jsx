@@ -24,12 +24,13 @@ import StorageIcon from "@material-ui/icons/Storage"
 import ContactsIcon from "@material-ui/icons/Contacts"
 
 import clsx from "clsx"
+import { titleFontFamily } from "../theme"
 
 const drawerWidth = 240
 
 const useStyles = makeStyles((theme) => ({
 	appBarHeader: {
-		fontFamily: "Monoton",
+		fontFamily: titleFontFamily,
 		margin: "0 auto"
 	},
 	root: {

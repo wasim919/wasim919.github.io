@@ -5,6 +5,7 @@ import { Grid, makeStyles, Typography } from "@material-ui/core"
 import ProjectCardComponent from "../components/ProjectCardComponent"
 
 import { projects } from "../content"
+import { titleFontFamily } from "../theme"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 		}
 	},
 	titleStyle: {
-		fontFamily: "Monoton",
+		fontFamily: titleFontFamily,
 		marginBottom: "2rem"
 	}
 }))

@@ -5,7 +5,7 @@ import { Grid, Typography, Avatar } from "@material-ui/core"
 import Typewriter from "typewriter-effect"
 
 import { useStyles } from "./MyBio.theme"
-import { bio } from "../content"
+// import { bio } from "../content"
 
 export default function MyBio({ id }) {
 	const classes = useStyles()

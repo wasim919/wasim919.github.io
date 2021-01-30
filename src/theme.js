@@ -1,7 +1,2 @@
-import { createMuiTheme } from "@material-ui/core"
-
-export const customTheme = createMuiTheme({
-	typography: {
-		fontFamily: "Roboto"
-	}
-})
+export const bodyFontFamily = "Josefin Slab"
+export const titleFontFamily = "Special Elite"

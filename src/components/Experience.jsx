@@ -4,13 +4,14 @@ import { Grid, AppBar, Tabs, Tab, makeStyles, Typography, List } from "@material
 
 import { experienceTypes, aiExperience, softExperience, freeLanceExperience } from "../content"
 import ExperienceListComponent from "./ExperienceListComponent"
+import { titleFontFamily } from "../theme"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		marginTop: "5rem"
 	},
 	titleStyle: {
-		fontFamily: "Monoton",
+		fontFamily: titleFontFamily,
 		marginBottom: "2rem"
 	},
 	tabs: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	tabPanel: {
 		[theme.breakpoints.up("md")]: {
-			width: "38.5rem"
+			width: "35.4rem"
 		},
 		backgroundColor: theme.palette.type === "light" ? "white" : "dark"
 	}

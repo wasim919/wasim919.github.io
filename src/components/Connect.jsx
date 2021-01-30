@@ -5,10 +5,11 @@ import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
+import { titleFontFamily } from "../theme"
 
 const useStyles = makeStyles((theme) => ({
 	titleStyle: {
-		fontFamily: "Monoton",
+		fontFamily: titleFontFamily,
 		marginBottom: "2rem",
 		display: "block"
 	},

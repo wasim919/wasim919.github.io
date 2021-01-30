@@ -14,6 +14,7 @@ import Experience from "./components/Experience"
 import FormalInfo from "./components/Formal Info"
 import Connect from "./components/Connect"
 import Footer from "./components/Footer"
+import { bodyFontFamily } from "./theme"
 
 export default function App() {
 	const [dark, setDark] = useState(localStorage.getItem("mysitetheme") ? JSON.parse(localStorage.getItem("mysitetheme")) : true)
@@ -21,7 +22,7 @@ export default function App() {
 	const customTheme = React.useMemo(() => {
 		return createMuiTheme({
 			typography: {
-				fontFamily: "Oswald, sans-serif"
+				fontFamily: bodyFontFamily
 			},
 			palette: {
 				type: dark ? "dark" : "light",
