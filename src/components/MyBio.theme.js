@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core"
+import { titleFontFamily } from "../theme"
 
 export const useStyles = makeStyles((theme) => ({
 	gridStyle: {
@@ -10,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 		// marginTop: "2rem"
 	},
 	myName: {
-		fontFamily: "Special Elite, cursive"
+		fontFamily: titleFontFamily
 	},
 	bioStyle: {
 		marginTop: "1rem"
