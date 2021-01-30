@@ -9,7 +9,7 @@ import { projects } from "../content"
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
 		[theme.breakpoints.up("md")]: {
-			marginTop: "3rem"
+			marginTop: "5rem"
 		}
 	},
 	titleStyle: {

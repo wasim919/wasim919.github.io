@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Connect({ id }) {
 	const classes = useStyles()
 	return (
-		<div style={{ marginTop: "2rem" }}>
+		<div style={{ marginTop: "5rem" }}>
 			<Typography className={classes.titleStyle} variant="h4">
 				Connect
 			</Typography>

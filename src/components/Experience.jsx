@@ -7,7 +7,7 @@ import ExperienceListComponent from "./ExperienceListComponent"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
-		marginTop: "3rem"
+		marginTop: "5rem"
 	},
 	titleStyle: {
 		fontFamily: "Monoton",

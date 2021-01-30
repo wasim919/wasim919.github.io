@@ -28,7 +28,7 @@ import { formalInfo } from "../content"
 
 const useStyles = makeStyles((theme) => ({
 	mainContainer: {
-		marginTop: "3rem"
+		marginTop: "5rem"
 	},
 	titleStyle: {
 		fontFamily: "Monoton",
