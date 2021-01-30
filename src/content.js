@@ -59,7 +59,7 @@ export const projects = [
 	}
 ]
 
-export const experienceTypes = ["Software Developer", "AI", "Freelance"]
+export const experienceTypes = ["Software Developer", "AI", "Other"]
 
 export const softExperience = [
 	{
