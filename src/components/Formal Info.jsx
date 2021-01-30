@@ -226,7 +226,14 @@ export default function FormalInfo({ id }) {
 				</Grid>
 			</Grid>
 			<div style={{ margin: "2rem auto" }}>
-				<Button download="wasim_resume.pdf" href="/wasim_resume.pdf" variant="contained" color="primary" startIcon={<SaveIcon />}>
+				<Button
+					download="wasim_resume.pdf"
+					href="./wasim_resume.pdf"
+					target="_blank"
+					variant="contained"
+					color="primary"
+					startIcon={<SaveIcon />}
+				>
 					Resume
 				</Button>
 			</div>
