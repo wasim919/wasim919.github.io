@@ -11,7 +11,14 @@ export default function MyBio({ id }) {
 	const classes = useStyles()
 	return (
 		<Grid className={classes.gridStyle} container>
-			<Grid container spacing={5} alignItems="center" justify="center" className={classes.innerGridStyle}>
+			<Grid
+				container
+				style={window.screen.width < 600 ? { flexDirection: "column-reverse" } : { flexDirection: "row" }}
+				spacing={5}
+				alignItems="center"
+				justify="center"
+				className={classes.innerGridStyle}
+			>
 				<Grid item sm={12} md={6}>
 					<Typography id={id} className={classes.myName} variant="h5">
 						Hi, my name is Wasim Ishaq
