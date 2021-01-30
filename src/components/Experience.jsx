@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	tabPanel: {
 		[theme.breakpoints.up("md")]: {
-			width: "35.4rem"
+			width: "38.5rem"
 		},
 		backgroundColor: theme.palette.type === "light" ? "white" : "dark"
 	}
