@@ -29,7 +29,7 @@ const drawerWidth = 240
 
 const useStyles = makeStyles((theme) => ({
 	appBarHeader: {
-		fontFamily: "Monoton",
+		fontFamily: "Open Sans",
 		margin: "0 auto"
 	},
 	root: {

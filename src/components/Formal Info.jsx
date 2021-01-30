@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: "5rem"
 	},
 	titleStyle: {
-		fontFamily: "Monoton",
+		fontFamily: "Open Sans",
 		marginBottom: "2rem"
 	},
 	tabs: {

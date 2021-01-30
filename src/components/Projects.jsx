@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 		}
 	},
 	titleStyle: {
-		fontFamily: "Monoton",
+		fontFamily: "Open Sans",
 		marginBottom: "2rem"
 	}
 }))

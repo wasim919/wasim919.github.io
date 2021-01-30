@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => ({
 		// marginTop: "2rem"
 	},
 	myName: {
-		fontFamily: "Special Elite, cursive"
+		fontFamily: "Open Sans"
 	},
 	bioStyle: {
 		marginTop: "1rem"
