@@ -16,7 +16,7 @@ import Connect from "./components/Connect"
 import Footer from "./components/Footer"
 
 export default function App() {
-	const [dark, setDark] = useState(localStorage.getItem("mysitetheme") ? JSON.parse(localStorage.getItem("mysitetheme")) : false)
+	const [dark, setDark] = useState(localStorage.getItem("mysitetheme") ? JSON.parse(localStorage.getItem("mysitetheme")) : true)
 
 	const customTheme = React.useMemo(() => {
 		return createMuiTheme({
