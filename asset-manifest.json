@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/MySpace/static/js/main.d4d1ea20.chunk.js",
-    "main.js.map": "/MySpace/static/js/main.d4d1ea20.chunk.js.map",
+    "main.js": "/MySpace/static/js/main.f3ee6a61.chunk.js",
+    "main.js.map": "/MySpace/static/js/main.f3ee6a61.chunk.js.map",
     "runtime-main.js": "/MySpace/static/js/runtime-main.f3eeb2bf.js",
     "runtime-main.js.map": "/MySpace/static/js/runtime-main.f3eeb2bf.js.map",
-    "static/js/2.c0f1c851.chunk.js": "/MySpace/static/js/2.c0f1c851.chunk.js",
-    "static/js/2.c0f1c851.chunk.js.map": "/MySpace/static/js/2.c0f1c851.chunk.js.map",
+    "static/js/2.6fbe5534.chunk.js": "/MySpace/static/js/2.6fbe5534.chunk.js",
+    "static/js/2.6fbe5534.chunk.js.map": "/MySpace/static/js/2.6fbe5534.chunk.js.map",
     "index.html": "/MySpace/index.html",
-    "static/js/2.c0f1c851.chunk.js.LICENSE.txt": "/MySpace/static/js/2.c0f1c851.chunk.js.LICENSE.txt"
+    "static/js/2.6fbe5534.chunk.js.LICENSE.txt": "/MySpace/static/js/2.6fbe5534.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f3eeb2bf.js",
-    "static/js/2.c0f1c851.chunk.js",
-    "static/js/main.d4d1ea20.chunk.js"
+    "static/js/2.6fbe5534.chunk.js",
+    "static/js/main.f3ee6a61.chunk.js"
   ]
 }
